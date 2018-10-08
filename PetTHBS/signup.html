@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="page.css"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+<script src="validate_input.js"></script>  
+    <title>SignUp</title>
+  </head>
+  <body >
+<form method="post" name="signup">
+<div class="signup">
+  <br>
+  <div class="form-group" style="width: 350px;padding-left: 7%;color:black">
+    <label>Username</label>
+    <div style="width:323px;">
+    <input type="text" class="form-control" name="username"placeholder="Username here" required="required">
+    </div> 
+  </div>
+  <div class="form-group" style="width: 350px;padding-left:7%;color:black">
+    <label>Password</label>
+     <div style="width:323px;">
+    <input type="password" class="form-control" name="pass" placeholder="Password here" required="required">
+ </div>
+  </div>
+   <div class="form-group" style="width: 350px; padding-left: 7%;color:black">
+    <label>Email Id</label>
+     <div style="width:323px;">
+    <input type="email" class="form-control" name="email" placeholder="EmailId here" required="required">
+    </div>
+  </div>
+  <div class="form-group" style="width: 350px;padding-left: 7%;color:black">
+    <label>Full Name</label>
+      <div style="width:323px;">
+    <input type="text" class="form-control" name="fullname" placeholder="Full name here" required="required">
+  </div>
+  <br>
+  <button onclick="validate()" class="btn btn-success btn-block">Sign Up</button>
+  <br>
+  <div style="color:white">
+  <center>	<p>--------------------------------</p></center>
+  </div>
+  <a href="signin.html" type="submit" class="btn btn-primary btn-block">I Have an Account</button></a>
+<br>
+  <center>	<p>PET STORE</p></center>
+
+</form>
+  </body>
+</html>
