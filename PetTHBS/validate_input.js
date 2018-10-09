@@ -1,31 +1,35 @@
 function validate(){
 if(validateUsername()){
 if(validatePassword()){
-window.close();
-    window.open("main.html");
-}	
+	if(validateEmail()){
+     window.location.href = "C:\\Users\\shiva_ram\\Downloads\\PetTHBS\\PetTHBS\\main.html";
+	}
+	 }	
 }
 return false;
 }
 function validatePassword() {
     var check = document.signup.pass.value;
-        errors = [];
+     var s="";
 		if(check==""){
 		alert("Please type Password");
 		return false;
 	}
 	else{
     if (check.length < 8) {
-        errors.push("Your password must be at least 8 characters"); 
+        s+="Your password must be at least 8 characters";
+		s+="\n";
     }
     if (check.search(/[a-z]/i) < 0) {
-        errors.push("Your password must contain at least one letter.");
+        s+="Your password must contain at least one letter.";
+		s+="\n";
     }
     if (check.search(/[0-9]/) < 0) {
-        errors.push("Your password must contain at least one digit."); 
+        s+="Your password must contain at least one digit."; 
+		s+="\n";
     }
-    if (errors.length > 0) {
-        alert(errors.join("\n"));
+    if (s.length > 0) {
+        alert(s);
         return false;
     }
 	}
@@ -33,7 +37,6 @@ function validatePassword() {
 }
 function validateUsername(){
 var uname = document.signup.username.value;
-errors = [];
 if(uname==""){
 	alert("please type username");
 	return false;
@@ -47,4 +50,13 @@ if (!(uname.search(/[0-9]/) < 0)) {
 		return false;
     }
 	 return true;
+}
+function validateEmail(){
+	var email=document.signup.email.value;
+	var check=/^([a-zA-Z0-9])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	if(!check.test(email.value)){
+		alert("Email id is not valid");
+		return false;
+	}
+	return true;
 }
