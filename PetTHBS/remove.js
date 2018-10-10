@@ -1,7 +1,7 @@
 function validateRemove(){
 if(validatePetname()){
 if(validateOwnerId()){
-	alert("hi");
+	alert("successfully removed");
   //   window.location.href = "C:\\Users\\shiva_ram\\Downloads\\PetTHBS\\PetTHBS\\main.html";
 	 }	
 }

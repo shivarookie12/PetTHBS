@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+ <script src="remove.js"></script>  
+<title>Remove</title>
+<style>
+div.edit{
+  margin :auto;
+  width :380px;
+  height:385px;
+  border:3px solid #0001;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 100px;
+}
+</style>
+</head>
+<body>
+<form method="post" name="removePet">
+<div class="edit">
+  <div class="form-group" style="width: 350px;padding-left:7%"><br>
+    <center>Remove Pet</center>
+    <br>
+    <label>PetName</label>
+    <input type="text" class="form-control" name="pet_name" placeholder="PetName here" >
+    <label>Pet-OwnerId</label>
+    <input type="text" class="form-control" name="pet_owner_id" placeholder="PetOwnerId here">
+   </div>
+   <div class="container" >
+  <button onclick="return validateRemove()" class="btn btn-success btn-block">Remove</button>
+  </div>
+</form>
+</body>
+</html>

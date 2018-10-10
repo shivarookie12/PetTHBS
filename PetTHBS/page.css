@@ -15,7 +15,7 @@ body, html {
 }
 
 .bg { 
-    background-image: url("images.jpeg");
+    background-image: url("image.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,18 @@ div.signup{
 body, html {
     height: 100%;
 }
-
+.bt {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .bg { 
     background-image: url("images.jpeg");
     height: 100%; 

@@ -53,10 +53,10 @@ if (!(uname.search(/[0-9]/) < 0)) {
 }
 function validateEmail(){
 	var email=document.signup.email.value;
-	var check=/^([a-zA-Z0-9])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	if(!check.test(email.value)){
-		alert("Email id is not valid");
-		return false;
-	}
-	return true;
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+  {
+    return true;
+  }
+    alert("You have entered an invalid email address!")
+    return false;
 }
